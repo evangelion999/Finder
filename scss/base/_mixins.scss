@@ -1,0 +1,7 @@
+//Адаптивный размер шрифта
+@mixin adaptiv-font($pcSize, $mobSize) { 
+$addSize: $pcSize - $mobSize; 
+$maxWidth: $maxWidth - 360; //минимальный размер устройства - 360
+font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 360px) / #{$maxWidth})); 
+}
+// @include adaptiv-font(макс. размер, мин. размер);

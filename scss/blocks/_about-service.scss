@@ -1,0 +1,35 @@
+.about-service {
+    padding: 40px 0 78px 0;
+    &__title {
+        font-size: 58px;
+        line-height: 135%;
+        padding-bottom: 50px;
+    }
+    &__list {
+        li {
+            display: flex;
+            &:not(:last-child) {
+                margin-bottom: 80px;
+            }
+        }
+    }
+    &__item-head {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item-title {
+        display: none;
+    }
+    &__item-num {
+        font-size: 128px;
+        line-height: 115%;
+        padding-right: 55px;
+        align-self: start;
+        transform: translateY(-18px);
+    }
+    &__item-descr {
+        font-family: 'Suisse Intl';
+        font-size: 28px;
+        line-height: 135%;
+    }
+}

@@ -1,0 +1,17 @@
+.intro-text {
+    position: relative;
+    padding: 89px 0;
+    p {
+        text-align: center;
+        font-size: 24px;
+        line-height: 135%;
+    }
+    &__border {
+        &:first-child {
+            top: 0;
+        }
+        &:last-child {
+            bottom: 0;
+        }
+    }
+}

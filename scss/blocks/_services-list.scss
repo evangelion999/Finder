@@ -1,0 +1,36 @@
+.services-list {
+    &__title {
+        display: none;
+    }
+    &__item {
+        border-top: 1px solid $main-color;
+        border-bottom: 1px solid $main-color;
+        &:not(:last-child) {
+            margin-bottom: 55px;
+        }
+        &-title {
+            font-size: 48px;
+            line-height: 115%;
+            padding: 12px 0;
+        }
+        &-content {
+            display: flex;
+            align-items: center;
+        }
+        &-descr {
+            font-family: 'Suisse Intl';
+            font-size: 28px;
+            line-height: 135%;
+            padding-right: 64px;
+        }
+        a {
+            border-top: 1px solid $main-color;
+            border-left: 1px solid $main-color;
+            border-right: 1px solid $main-color;
+            margin-right: 45px;
+        }
+        &-img {
+            max-width: 437px;
+        }
+    }
+}

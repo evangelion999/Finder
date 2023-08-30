@@ -1,0 +1,13 @@
+.service-img {
+    border-top: 1px solid $main-color;
+    border-bottom: 1px solid $main-color;
+    &__wrap {
+        display: flex;
+    }
+    img {
+        width: 100%;
+    }
+    .border {
+        display: none;
+    }
+}

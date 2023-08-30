@@ -1,0 +1,26 @@
+.policy {
+    padding-bottom: 40px;
+    li, span {
+        color: $accent-color;
+        font-size: 20px;
+        line-height: 115%;
+    }
+    li {
+        font-weight: 400;
+    }
+    span {
+        font-weight: 700;
+    }
+    &__bull-list {
+        list-style-type: disc;
+        margin-left: 29px;
+        li {
+            &::marker {
+                font-size: 14px;
+            }
+        }
+    }
+    .border {
+        display: none;
+    }
+}

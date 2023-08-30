@@ -1,0 +1,11 @@
+.cookie {
+    padding: 24px 18px;
+    border: 1px solid $main-color;
+    .flex-container {
+        align-items: center;
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 111%;
+    }
+}

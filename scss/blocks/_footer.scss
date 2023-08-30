@@ -1,0 +1,44 @@
+.footer {
+    border-top: 1px solid $main-color;
+    margin-top: 70px;
+    &__social {
+        display: none;
+    }
+    &__logo {
+        padding: 15px 74px 15px 0;
+        border-right: 1px solid $main-color;
+        img {
+            &:first-child {
+                width: 54px;
+            }
+            &:last-child {
+                width: 128px;
+                margin-left: 15px;
+            }
+        }
+    }
+    &__menu {
+        ul {
+            li {
+                &:not(:last-child) {
+                    padding-right: 41px;
+                }
+                &:first-child {
+                    padding: 0 95px 0 15px;
+                }
+            }
+        }
+    }
+    &__menu ul, .copyright {
+        padding-top: 10px;
+    }
+    .menu__link {
+        font-size: 12px;
+        letter-spacing: -0.6px;
+    }
+    .copyright {
+        p {
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,122 @@
+.header {
+    border-bottom: 1px solid #000;
+    &__logo {
+        position: relative;
+        border-right: 1px solid $main-color;
+        padding: 15px 97px 17px 0px;
+        &::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            bottom: -3px;
+            right: -3px;
+            width: 6px;
+            height: 6px;
+            background-image: url('/img/circle.svg');
+            background-repeat: no-repeat;
+        }
+    }
+    &__menu, ul {
+        flex-grow: 1;
+    }
+    &__menu {
+        li {
+            &:first-child {
+                padding-left: 80px;
+            }
+            &:last-child {
+                margin-left: auto;
+                border: 1px solid $main-color;
+                padding: 7px 12px;
+            }
+            &:not(:last-child, :nth-child(5)) {
+                padding-right: 51px;
+            }
+        }
+        .menu__link {
+            font-size: 20px;
+        }
+        &._mob {
+            display: none;
+            position: absolute;
+            z-index: 10;
+            width: 100%;
+            animation-duration: 0.4s;
+            animation-fill-mode: forwards;
+            background-color: $bg-color;
+            border-top: 1px solid $main-color;
+            &._active {
+                animation-name: open-menu;
+            }
+            &._closed {
+                animation-name: close-menu;
+            }
+        }
+    }
+    &__burger-icon,
+    &__cross-icon {
+        display: none;
+    }
+    &__menu-footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px 0 15px;
+        border-top: 1px solid $main-color;
+        .logo {
+            padding: 9px 18px 7px 0;
+            border-right: 1px solid $main-color;
+            img:last-child {
+                margin-left: 5px;
+            }
+        }
+    }
+}
+.logo {
+    display: flex;
+    align-items: center;
+    a {
+        display: block;
+        display: flex;
+    }
+    img {
+        &:last-child {
+            margin-left: 35px;
+        }
+    }
+}
+.menu {
+    &__link {
+        line-height: 115%;
+        color: $main-color;
+        text-decoration: none;
+    }
+}
+.copyright {
+    display: flex;
+    align-items: center;
+    p {
+        color: #9FA4BC;
+        font-family: 'Inter';
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 145%;
+        letter-spacing: -0.12px;
+    }
+}
+
+@keyframes open-menu {
+    0% {
+        top: -1000px;
+    }
+    100% {
+        top: 105px;
+    }
+}
+@keyframes close-menu {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -1000px;
+    }
+}
